@@ -6,6 +6,8 @@ class Connexion extends React.Component {
 		event.preventDefault();
 		// On récupère le pseudo
 		const pseudo = this.pseudoInput.value;
+
+		// !UPDATE
 		// On change d'url
 		this.context.router.transitionTo(`/pseudo/${pseudo}`);
 	}
